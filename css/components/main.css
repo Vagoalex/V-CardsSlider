@@ -1,0 +1,88 @@
+/* ============CONTAINER=============================================== */
+.main {
+	margin: 50px 0px 50px 0px;
+}
+h1 {
+	color: #000;
+	font-size: 40px;
+	font-weight: bold;
+	padding: 0px 0 10px 50px;
+}
+.container {
+	display: flex;
+	width: 100%;
+	padding: 0 20px;
+	position: relative;
+}
+.slide {
+	height: 80vh;
+	border-radius: 20px;
+	box-shadow: 4px 5px 40px 1px rgba(34, 60, 80, 0.48);
+	cursor: pointer;
+	margin: 10px;
+	color: #fff;
+	flex: 1;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+.slide:hover {
+	outline: 4px solid #000;
+	transition: all 500ms ease-in-out;
+}
+.slide--active {
+	flex: 10;
+}
+.slide--active .slide__title {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+.slide-1 {
+	background-image: url('https://img2.goodfon.ru/wallpaper/nbig/6/ee/nature-indonesia-bali-pools.jpg');
+}
+.slide-2 {
+	background-image: url('https://islandhouseforrent.ru/files/node_news/dostoprimechatelnosti-na-samui.jpg');
+}
+.slide-3 {
+	background-image: url('https://img2.goodfon.ru/wallpaper/nbig/4/84/maldivy-plyazh-pesok-palmy.jpg');
+}
+.slide-4 {
+	background-image: url('https://images8.alphacoders.com/567/thumb-1920-567659.jpg');
+}
+.slide-5 {
+	background-image: url('https://ya.clan.su/_ph/13/788598885.jpg?1641497044');
+}
+.slide__title {
+	position: absolute;
+	color: black;
+	font-size: 42px;
+	font-weight: bold;
+	bottom: 25px;
+	left: 20px;
+	opacity: 0;
+}
+/* ================================================= */
+
+/* ============HEADER-FOOTER================================================================================================ */
+.header,
+.footer {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 10px;
+	background-color: darkslateblue;
+}
+.header {
+	position: fixed;
+	top: 0;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+}
